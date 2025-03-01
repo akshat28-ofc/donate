@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>STOIC - Donate</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <body>
+    <div class="donation-container">
+      <div class="profile-image">
+        <img src="journey.png" alt="STOIC Logo" class="logo-image">
+      </div>
+      
+      <h1 class="title">STOIC</h1>
+      
+      <p class="description">
+        STOIC empowers startup founders with AI-driven insights, digital products,
+        and a thriving community—offering eBooks, guides, and exclusive
+        resources for success. 🚀
+      </p>
+      
+      <div class="social-links">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+      
+      <div class="donation-card">
+        <div class="donation-logo">
+          <img src="journey.png" alt="STOIC" class="small-logo">
+          <div class="donation-text">
+            <h2>Donate To STOIC</h2>
+            <p>Donate Here !</p>
+          </div>
+        </div>
+        <div class="heart-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+      </div>
+      
+      <div class="payment-section" id="paymentSection">
+        <h2>Support Our Work</h2>
+        <div class="amount-options">
+            <button class="amount-btn" data-amount="10">₹10</button>
+            <button class="amount-btn" data-amount="50">₹50</button>
+            <button class="amount-btn" data-amount="100">₹100</button>
+            <button class="amount-btn custom" data-amount="custom">Custom</button>
+        </div>
+        
+        <div class="custom-amount-container" id="customAmountContainer" style="display: none;">
+          <input type="number" id="customAmount" placeholder="Enter amount (₹)" min="1">
+        </div>
+        
+        <div class="upi-section">
+          <button id="donateBtn" class="donate-btn">Donate</button>
+        </div>
+        
+        <div class="qr-section">
+          <h3>Or Scan QR Code</h3>
+          <div class="qr-placeholder">
+            <div class="qr-code" id="qrCode">
+              <!-- QR code will be generated here -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="thank-you-message" id="thankYouMessage" style="display: none;">
+        <h2>Thank You for Your Donation!</h2>
+        <p>Your support helps us continue our mission.</p>
+        <button id="backBtn" class="back-btn">Make Another Donation</button>
+      </div>
+    </div>
+  </body>
+</html>
